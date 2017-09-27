@@ -1,0 +1,23 @@
+{
+  "name": "flashy-cards",
+  "version": "1.0.0",
+  "description": "make cards",
+  "main": "Quiz.js",
+  "dependencies": {
+    "inquirer": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaddJhin/Flashy-Cards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaddJhin/Flashy-Cards/issues"
+  },
+  "homepage": "https://github.com/MaddJhin/Flashy-Cards#readme"
+}
