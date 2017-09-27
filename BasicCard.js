@@ -2,8 +2,8 @@ console.log("Basic Card Maker Loaded");
 
 function BasicCard(front, back) {
     if(this instanceof BasicCard){
-        this.front = front;
-        this.back = back;    
+        this.question = front;
+        this.answer = back;    
     }
     else
     {
@@ -12,7 +12,7 @@ function BasicCard(front, back) {
 }
 
 BasicCard.prototype.printFront = function printFront() {
-    console.log(this.front);
+    console.log(this.question);
 };
 
 module.exports = BasicCard;
