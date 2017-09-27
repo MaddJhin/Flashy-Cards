@@ -57,7 +57,37 @@ function MakeBasicCard(){
 }
 
 function MakeClozeCard() {
-    asker.prompt().then(function(){ });
+    asker.prompt([
+        {
+            type: "Input",
+            name: "question",
+            message:"What's the full text?"
+        },
+        {
+            type: "Input",
+            name: "answer",
+            message:"What's getting removed?"
+        },
+        {
+            type: "confirm",
+            name: "continue",
+            message:"Make another card?",
+            default: true
+        }
+    ]).then(function(answers){
+        var newCloze = clozeCard(answers.question, answers.answer);
+        var prompt = newCloze.getPartial();
+        var newCard = basicCard(prompt, newCloze.cloze);
+        cardBank.push(newCard);
+        if(answers.continue){
+            console.log("\n==============================\n");            
+            MakeClozeCard();
+        }
+        else{
+            console.log("\nAnswer the Following Questions\n");
+            AskQuestions(cardBank);            
+        }
+     });
 }
 
 function AskQuestions(questionsArray) {

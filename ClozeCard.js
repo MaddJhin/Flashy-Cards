@@ -1,9 +1,9 @@
-console.log("Basic Card Maker Loaded");
+console.log("Cloze Card Maker Loaded");
 
 function ClozeCard(text, cloze) {
-    if(this instanceof BasicCard){
-        this.question = text;
-        this.answer = cloze;
+    if(this instanceof ClozeCard){
+        this.text = text;
+        this.cloze = cloze;
     }
     else
     {
