@@ -1,0 +1,44 @@
+{
+    "questions": [
+        {
+            "front": "Mad cow disease is the common term for bovine spongiform encephalopathy, a disease that causes degeneration of the brain and spinal cord in cattle?",
+            "back": "Mad cow disease"
+        },
+        {
+            "front": "A panda's daily diet consists almost entirely of Bamboo?",
+            "back": "Bamboo"
+        },
+        {
+            "front": "Harambe was the name of the gorilla that was shot and killed at the Cincinnati zoo in 2016 after a three-year old boy fell into the enclosure?",
+            "back": "Harambe"
+        },
+        {
+            "front": "The largest species of terrestrial crab in the world is the Coconut crab",
+            "back": "Coconut crab"
+        },
+        {
+            "front": "Male bees that comes from an unfertilized egg are called Drones",
+            "back": "Drones"
+        },
+        {
+            "front": "Cynophobia is the fear of what kind of Dogs",
+            "back": "Dogs"
+        },
+        {
+            "front": "The term wake, kettle, or committee refers to a group of Vultures",
+            "back": "Vultures"
+        },
+        {
+            "front": "Dolphins are believed to not possess a sense of Smell",
+            "back": "Smell"
+        },
+        {
+            "front": "A flamboyance is a group of Flamingos",
+            "back": "Flamingos"
+        },
+        {
+            "front": "The Chihuahua is a breed of dog believed to originate from Mexico",
+            "back": "Mexico"
+        }
+    ]
+}

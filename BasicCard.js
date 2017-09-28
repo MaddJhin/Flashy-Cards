@@ -15,4 +15,8 @@ BasicCard.prototype.printFront = function printFront() {
     console.log(this.question);
 };
 
+BasicCard.prototype.printBack = function printBack() {
+    console.log(this.question);
+}
+
 module.exports = BasicCard;
