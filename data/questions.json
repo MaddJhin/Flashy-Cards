@@ -1,1 +1,12 @@
-[object Object]
+{
+  "questions": [
+    {
+      "front": "ok",
+      "back": "ok"
+    },
+    {
+      "front": "for real",
+      "back": "ok"
+    }
+  ]
+}

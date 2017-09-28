@@ -184,23 +184,22 @@ function MakeClozeCard() {
             default: true
         }
     ]).then(function(answers){
-        var newCloze = clozeCard(answers.question, answers.answer);
-        var prompt = newCloze.getPartial();
-        var newCard = basicCard(prompt, newCloze.cloze);
-        cardBank.push(newCard);
+        var question = { front: answers.question, back: answers.answer};
+        cardBank.push(question);
         if(answers.continue){
             console.log("\n==============================\n");            
             MakeClozeCard();
         }
         else{
             console.log("\nQuestions Entered!\n");
-            PrintQuestions(JSON.parse(cardBank));
+            var questionBank = {questions: cardBank};
+            PrintQuestions(questionBank);
         }
      });
 }
 
 function PrintQuestions(questionBank) {
-    fs.writeFile("./data/questions.json", questionBank, (derp) => {
+    fs.writeFile("./data/questions.json", JSON.stringify(questionBank, null, 2) , 'utf-8', (derp) => {
         if(derp) throw derp;
 
         console.log("Questions Saved", questionBank);
